@@ -33,14 +33,44 @@ public class RestClient {
 	        Client client = Client.create(config);
 	        WebResource resource = client.resource(BASE_URI);
 	        
-	        validateCrediCard(resource);
+	        /*
+	         * Create Restful Web service that will process credit card approvals. 
+	         * To keep things simple, we’ll say that any credit card ending in an even number is 
+	         * considered valid and any card with an odd number is invalid. 
+	         * (This obviously isn’t true in real life; we’re just simplifying the problem for demonstration purposes.)
+	         *  In order to process the card, we’ll need to know the card number.
+	         *  We’ll send back a true if it’s valid—false if it’s invalid.
+	         * */
+	        validateCrediCard(resource); 
 	        
+	        
+	        
+	        /*Create a RESTful Web service that accepts a date parameter and 
+	         * tells you how old you will be on that date. 
+	         * Create a client that can gather date of birth from the user and display the answer.*/
 	        findAge(resource);
 	        
+	        
+	        
+	       /* Create a RESTful Web service that doubles any integer value passed in. 
+	        Create a client that can gather integer value from the user and display the answer.
+	        */
 	        doubleTheInt(resource);
 	        
+	        
+	        
+	        /*
+	        Create a RESTful Web service that converts your name to all lowercase letters when you pass it in by reference. 
+	        Create a client that can gather String from the user and display the answer.*/
 	        toLower(resource);
 	        
+	        
+	        
+	        /*
+	         * Create Simple object Album object which have attributes like title and singer, 
+	         * and user JACKSON to convert object to /from JSON.
+	         *  Create a Web service Client to access the Album details
+	         */
 	        getJsonAlbum(resource);
 	        
 	        
