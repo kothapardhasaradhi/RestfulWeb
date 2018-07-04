@@ -1,4 +1,4 @@
-package com.album;
+package com.controller;
 
 public class Album {
 	

@@ -1,0 +1,7 @@
+com\credicard\CrediCardApproval.class
+com\restClient\RestClient.class
+com\album\Album.class
+com\integerdouble\IntDouble.class
+com\dateOfBirth\CalculateAge.class
+com\album\AlbumJSONRest.class
+com\toLowerCase\ToLowerCase.class
